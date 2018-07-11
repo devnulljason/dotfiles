@@ -8,6 +8,7 @@ set smarttab
 set autoindent
 set splitright
 set splitbelow
+set colorcolumn=80
 
 " Powerline settings
 let $PYTHONPATH = 'home/jason/.local/lib/python3.6/site-packages'
