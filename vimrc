@@ -9,6 +9,7 @@ set autoindent
 set splitright
 set splitbelow
 set colorcolumn=80
+set mouse=a
 
 " Powerline settings
 let $PYTHONPATH = 'home/jason/.local/lib/python3.6/site-packages'
@@ -19,7 +20,7 @@ set laststatus=2
 set showtabline=2
 set noshowmode
 " set t_Co=256
-" vim-plug
+vim-plug
 call plug#begin()
 Plug 'valloric/youcompleteme'
 Plug 'stannangeloff/php.vim'
