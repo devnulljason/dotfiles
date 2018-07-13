@@ -1,4 +1,4 @@
-URxvt*font: xft:Source Code Pro:size=10
+URxvt*font: xft:Source Code Pro:size=11
 
 ! special
 *.foreground:   #d1d1d1
@@ -43,7 +43,7 @@ URxvt.background: [80]#06060a
 URxvt.scrollBar:                      false
 URxvt.mouseWheelScrollPage:           false
 URxvt.cursorBlink:                    true
-URxvt.background:                     black
+!URxvt.background:                     black
 !URxvt*foreground:                     grey
 URxvt.saveLines:                      5000
 URxvt.secondaryScreen: 1
