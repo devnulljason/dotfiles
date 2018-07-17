@@ -26,7 +26,6 @@ alias ls='ls --color'
 alias la='ls -A'
 alias ll='ls -al'
 export MANWIDTH=80
-export TERM="screen-256color"
 export WECHALLUSER="onom4stic0n"
 export WECHALLTOKEN="B375C-32CFF-95668-54DB3-EAEAF-78F08"
 PROMPT="%F{82}%n%f@%F{198}%S%m%s%f:%F{208}%1~%f $ " 
