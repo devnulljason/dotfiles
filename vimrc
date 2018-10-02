@@ -34,6 +34,7 @@ Plug 'klen/python-mode'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'thaerkh/vim-workspace'
+Plug 'crusoexia/vim-monokai'
 call plug#end()
 colorscheme monokai
 let g:pymode_python = 'python3'
