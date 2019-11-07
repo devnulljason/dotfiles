@@ -27,8 +27,6 @@ alias la='ls -A'
 alias ll='ls -al'
 # export TERM='screen-256color'
 export MANWIDTH=80
-export WECHALLUSER="onom4stic0n"
-export WECHALLTOKEN="B375C-32CFF-95668-54DB3-EAEAF-78F08"
 PROMPT=$'%F{82}%n%f@%F{198}%{\e[3m%}%m%{\e[0m%}%f:%F{208}%1~%f $ '
 # . $HOME/.local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
 # bindkey -v
