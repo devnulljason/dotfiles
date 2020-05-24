@@ -28,7 +28,4 @@ alias ll='ls -al'
 # export TERM='screen-256color'
 export MANWIDTH=80
 PROMPT=$'%F{82}%n%f@%F{198}%{\e[3m%}%m%{\e[0m%}%f:%F{208}%1~%f $ '
-# . $HOME/.local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
-# bindkey -v
-echo $(fortune -a)
 
