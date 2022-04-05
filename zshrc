@@ -27,5 +27,5 @@ alias la='ls -A'
 alias ll='ls -al'
 # export TERM='screen-256color'
 export MANWIDTH=80
-PROMPT=$'\[%F{82}%n%f@%F{198}%{\e[3m%}%m%{\e[0m%}%f\] %F{208}%1~%f $ '
+PROMPT=$'\[%F{82}%n%f@%F{198}%{\e[3m%}%m%{\e[0m%}%f %F{208}%1~%f\]$ '
 
