@@ -6,4 +6,8 @@ Symlink destination for files:
 * `environment.d/` → `$HOME/.config/environment.d`
 * `alacritty.yml` → `$HOME/.config/alacritty/alacritty.yml`
 * `vimrc` → `$HOME/.vimrc`
-* `zshrc` → `$HOME/.config/zsh/.zshrc`
+* `zshrc` → `${ZDOTDIR:-$HOME/.config/zsh}/.zshrc`
+* `p10k.zsh` → `${ZDOTDIR:-$HOME/.config/zsh}/.p10k.zsh`
+
+TODO:  
+⬜ Script creation of symlinks
