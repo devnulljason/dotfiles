@@ -49,7 +49,9 @@ autoload -Uz _zi
 zicompinit # <- https://z-shell.pages.dev/docs/gallery/collection#minimal
 
 # zi plugins
-zi ice depth=1; zinit light romkatv/powerlevel10k
+# https://github.com/romkatv/powerlevel10k
+zi ice depth=1
+zi light romkatv/powerlevel10k
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
