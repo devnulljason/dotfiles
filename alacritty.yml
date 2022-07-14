@@ -12,6 +12,10 @@ window:
   class:
     instance: Alacritty
     general: Alacritty
+  padding:
+    x: 10
+    y: 5
+  decorations: None
 scrolling:
   history: 10000
   multiplier: 3
