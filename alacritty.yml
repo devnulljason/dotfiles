@@ -1,3 +1,5 @@
+import:
+  - ~/.config/alacritty/dracula.yml
 window:
   dimensions:
     columns: 90
@@ -16,7 +18,6 @@ scrolling:
 font:
   normal:
     family: SauceCodePro NF
-  size: 8.0
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
   save_to_clipboard: true
