@@ -28,10 +28,13 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 # End of lines configured by zsh-newuser-install
-export PATH=$HOME/.local/bin:$PATH
 alias ls='ls --color'
 alias la='ls -A'
 alias ll='ls -al'
+if [[ command -v kubectl ]]; then
+  alias kc='kubectl'
+fi
+
 # export TERM='screen-256color'
 PROMPT=$'\[%F{82}%n%f@%F{198}%{\e[3m%}%m%{\e[0m%}%f %F{208}%1~%f\]$ '
 
