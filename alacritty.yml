@@ -4,9 +4,6 @@ window:
   dimensions:
     columns: 90
     lines: 35
-  position:
-    x: 0
-    y: 0
   title: Alacritty
   dynamic_title: true
   class:
