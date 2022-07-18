@@ -31,7 +31,7 @@ SAVEHIST=1000
 alias ls='ls --color'
 alias la='ls -A'
 alias ll='ls -al'
-if [[ command -v kubectl ]]; then
+if [[ $(command -v kubectl) ]]; then
   alias kc='kubectl'
 fi
 
