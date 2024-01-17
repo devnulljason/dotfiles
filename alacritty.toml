@@ -1,0 +1,33 @@
+import = ["/home/jason/.config/alacritty/dracula.toml"]
+
+[cursor]
+style = "Beam"
+vi_mode_style = "Block"
+
+[font.normal]
+family = "SauceCodePro NF"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[window]
+decorations = "None"
+dynamic_title = true
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.dimensions]
+columns = 90
+lines = 35
+
+[window.padding]
+x = 10
+y = 5
