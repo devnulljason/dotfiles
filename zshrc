@@ -35,9 +35,6 @@ if [[ $(command -v kubectl) ]]; then
   alias kc='kubectl'
 fi
 
-# export TERM='screen-256color'
-PROMPT=$'\[%F{82}%n%f@%F{198}%{\e[3m%}%m%{\e[0m%}%f %F{208}%1~%f\]$ '
-
 if [[ ! -f $HOME/.config/zsh/.zi/bin/zi.zsh ]]; then
   print -P "%F{33}▓▒░ %F{160}Installing (%F{33}z-shell/zi%F{160})…%f"
   command mkdir -p "$HOME/.config/zsh/.zi" && command chmod g-rwX "$HOME/.config/zsh/.zi"
@@ -57,7 +54,7 @@ zi ice depth=1
 zi light romkatv/powerlevel10k
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+[[ ! -f ~/.config/zsh/p10k.zsh ]] || source ~/.config/zsh/p10k.zsh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
