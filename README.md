@@ -9,4 +9,4 @@ Symlink destination for files:
 * `zsh/` → `${ZDOTDIR:-$HOME/.config/zsh/}`
 
 TODO:  
-⬜ Script creation of symlinks
+[x] Script creation of symlinks
