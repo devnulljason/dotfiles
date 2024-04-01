@@ -4,8 +4,11 @@ import = ["/home/jason/.config/alacritty/dracula.toml"]
 style = "Beam"
 vi_mode_style = "Block"
 
+[font]
+size = 12
+
 [font.normal]
-family = "SauceCodePro NF"
+family = "Hasklug Nerd Font"
 
 [scrolling]
 history = 10000
@@ -19,14 +22,11 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 decorations = "None"
 dynamic_title = true
 title = "Alacritty"
+startup_mode = "Maximized"
 
 [window.class]
 general = "Alacritty"
 instance = "Alacritty"
-
-[window.dimensions]
-columns = 90
-lines = 35
 
 [window.padding]
 x = 10
