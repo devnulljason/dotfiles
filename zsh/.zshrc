@@ -29,11 +29,21 @@ HISTFILE=~/.config/zsh/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
 # End of lines configured by zsh-newuser-install
-alias ls='ls --color'
-alias la='ls -A'
-alias ll='ls -hAlF'
-[[ $(command -v kubectl) ]] && alias kc=kubectl
 
+# ls shortcuts
+alias ls='ls --color=auto --group-directories-first'
+alias la='ls -A --file-type'
+alias ll='ls -hAlF'
+
+alias tree='tree --dirsfirst --noreport --opt-toggle'
+
+if [[ $(command -v nvim) ]]; then
+    alias vim='nvim'
+    export EDITOR='vim'
+    export MANPAGER='nvim +Man!'
+fi
+
+# zi setup
 if [[ ! -f $HOME/.config/zsh/.zi/bin/zi.zsh ]]; then
   print -P "%F{33}▓▒░ %F{160}Installing (%F{33}z-shell/zi%F{160})…%f"
   command mkdir -p "$HOME/.config/zsh/.zi" && command chmod g-rwX "$HOME/.config/zsh/.zi"
