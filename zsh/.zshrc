@@ -31,10 +31,8 @@ SAVEHIST=10000
 # End of lines configured by zsh-newuser-install
 alias ls='ls --color'
 alias la='ls -A'
-alias ll='ls -al'
-if [[ $(command -v kubectl) ]]; then
-  alias kc='kubectl'
-fi
+alias ll='ls -hAlF'
+[[ $(command -v kubectl) ]] && alias kc=kubectl
 
 if [[ ! -f $HOME/.config/zsh/.zi/bin/zi.zsh ]]; then
   print -P "%F{33}▓▒░ %F{160}Installing (%F{33}z-shell/zi%F{160})…%f"
@@ -49,6 +47,7 @@ autoload -Uz _zi
 # examples here -> https://z-shell.pages.dev/docs/gallery/collection
 zicompinit # <- https://z-shell.pages.dev/docs/gallery/collection#minimal
 
+bindkey -v
 # zi plugins
 # https://github.com/romkatv/powerlevel10k
 zi ice depth=1
@@ -57,6 +56,8 @@ zi light romkatv/powerlevel10k
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export MANWIDTH=100
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
