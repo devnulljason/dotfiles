@@ -20,12 +20,12 @@ local keys = {
 		mods = 'LEADER',
 		action = act.PromptInputLine {
 			description = 'Enter new name for tab',
-			initial_value = 'Tab Name',
-			action = wezterm.action_callback(function(window, pane, line)
+			-- initial_value = 'Tab Name',
+			action = wezterm.action_callback(function(window, _, line)
 				-- line will be `nil` if they hit escape without entering anything
 				-- An empty string if they just hit enter
 				-- Or the actual line of text they wrote
-				if line then
+				if line and #line > 0 then
 					window:active_tab():set_title(line)
 				end
 			end),
