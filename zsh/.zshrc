@@ -21,7 +21,7 @@ zstyle ':completion:*' substitute 1
 zstyle :compinstall filename '/home/jason/.zshrc'
 
 autoload -Uz compinit
-fpath+=$ZDOTDIR/completions
+fpath=($ZDOTDIR/completions $fpath)
 compinit
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
