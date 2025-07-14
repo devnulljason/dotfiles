@@ -2,3 +2,4 @@ zsh/.histfile
 zsh/.zi/
 zsh/.zcompdump
 zsh/zshenv
+zsh/completions
