@@ -1,20 +1,23 @@
 local wezterm = require("wezterm")
 local module = {}
 
-local SOLID_RIGHT_ARROW = wezterm.nerdfonts.pl_left_hard_divider -- ""
-local EMPTY_RIGHT_ARROW = wezterm.nerdfonts.pl_left_soft_divider -- ""
+local SOLID_RIGHT_ARROW = wezterm.nerdfonts.pl_left_hard_divider
 
 function module.apply(config)
 	config.use_fancy_tab_bar = false
 	config.tab_bar_at_bottom = true
+	config.tab_max_width = 32
 	return config
 end
 
 local function format_tab_title(tab, max_width)
 	local title = tab.tab_title
-	local title_width = max_width - 5
+	local title_width = max_width - 6
 	if title and #title > 0 then
-		return wezterm.truncate_right(title, title_width)
+		if #title > max_width then
+			return wezterm.truncate_right(title, title_width) .. "…"
+		end
+		return title
 	end
 	return tab.active_pane.title
 end
@@ -42,6 +45,9 @@ local function powerline_tabs(tab, tabs, panes, config, hover, max_width)
 	end
 
 	return {
+		{ Foreground = { Color = bg_color } },
+		{ Background = { Color = fg_color } },
+		{ Text = SOLID_RIGHT_ARROW },
 		{ Text = " " .. tab.tab_index + 1 .. " " .. title .. " " },
 		{ Foreground = { Color = fg_color } },
 		{ Background = { Color = bg_color } },
@@ -49,6 +55,6 @@ local function powerline_tabs(tab, tabs, panes, config, hover, max_width)
 	}
 end
 
-wezterm.on("format-tab-title", powerline_tabs)
+-- wezterm.on("format-tab-title", powerline_tabs)
 
 return module
