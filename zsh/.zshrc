@@ -25,7 +25,7 @@ fpath=($ZDOTDIR/completions $fpath)
 compinit
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.config/zsh/.histfile
+HISTFILE=$HOME/.cache/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
 # End of lines configured by zsh-newuser-install
