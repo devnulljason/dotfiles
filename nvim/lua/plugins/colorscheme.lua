@@ -1,5 +1,12 @@
 return {
-  { "Mofiqul/dracula.nvim" },
+  {
+    "Mofiqul/dracula.nvim",
+    opts = {
+      overrides = {
+        SnacksIndentScope = { link = "Comment" },
+      },
+    },
+  },
   {
     "LazyVim/LazyVim",
     opts = {
