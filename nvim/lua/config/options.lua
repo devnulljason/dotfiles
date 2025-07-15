@@ -5,6 +5,7 @@ vim.g.loaded_perl_provider = 0
 
 local opt = vim.opt
 
+opt.exrc = true
 opt.relativenumber = false
 opt.shiftwidth = 4
 opt.tabstop = 4
