@@ -3,3 +3,5 @@ zsh/.zi/
 zsh/.zcompdump
 zsh/zshenv
 zsh/completions
+
+fish/conf.d/environment.fish
