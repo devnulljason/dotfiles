@@ -1,6 +1,7 @@
 # vim:ft=kitty
 enabled_layouts tall:bias=66, stack
 os_window_state maximized
+cd $DEV_ROOT
 launch nvim .
 launch fish
 launch lazygit

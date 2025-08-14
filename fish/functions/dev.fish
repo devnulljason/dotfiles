@@ -5,5 +5,5 @@ function dev --description 'Open a file or folder in a dev environment'
         set -l _path (dirname $_path)
     end
 
-    kitty --detach --session sessions/dev.session --directory $_path
+    DEV_ROOT=$_path kitty --detach --session sessions/dev.session
 end
