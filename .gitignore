@@ -5,4 +5,5 @@ zsh/zshenv
 zsh/completions
 
 fish/conf.d/environment.fish
+fish/completions
 fish/fish_variables
