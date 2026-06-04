@@ -2,8 +2,10 @@ zsh/.histfile
 zsh/.zi/
 zsh/.zcompdump
 zsh/zshenv
-zsh/completions
+zsh/completions/
 
 fish/conf.d/environment.fish
-fish/completions
+fish/completions/
 fish/fish_variables
+
+sway/config.d/output.conf
