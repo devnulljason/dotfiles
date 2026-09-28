@@ -8,6 +8,7 @@ if type -q nvim
     set -gx EDITOR (type -p nvim)
     set -gx MANPAGER 'nvim +Man!'
 end
+set -gx MANWIDTH 100
 
 set -l _local_bin $HOME/.local/bin
 if test -d $_local_bin
