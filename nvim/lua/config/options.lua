@@ -5,5 +5,5 @@ local opt = vim.opt
 
 opt.exrc = true
 opt.relativenumber = false
-opt.shiftwidth = 4
 opt.tabstop = 4
+opt.shiftwidth = 0
