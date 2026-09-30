@@ -8,13 +8,16 @@ if type -q nvim
     set -gx EDITOR (type -p nvim)
     set -gx MANPAGER 'nvim +Man!'
 end
-set -gx MANWIDTH 100
 
-set -l _local_bin $HOME/.local/bin
-if test -d $_local_bin
-    fish_add_path $_local_bin
+# allow for manwidth margins on viewports <110 cols
+# round down to nearest multiple of 5 because I'm not a psychopath
+set -l cols (tput cols)
+set -gx MANWIDTH (math "min($cols-10-$cols%5, 100)")
+
+set -l local_bin $HOME/.local/bin
+if test -d $local_bin
+    fish_add_path $local_bin
 end
-set -e _local_bin
 
 if type -q starship
     starship init fish | source
